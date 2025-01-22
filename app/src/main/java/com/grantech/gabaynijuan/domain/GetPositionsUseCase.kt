@@ -1,4 +1,10 @@
 package com.grantech.gabaynijuan.domain
 
-class GetPositionsUseCase {
+import com.grantech.gabaynijuan.domain.abstraction.Repository
+import javax.inject.Inject
+
+class GetPositionsUseCase@Inject constructor(private val repository: Repository) {
+    suspend fun execute() {
+        return repository.getPositions()
+    }
 }

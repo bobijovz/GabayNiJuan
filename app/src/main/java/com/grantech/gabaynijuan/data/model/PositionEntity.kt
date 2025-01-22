@@ -1,6 +1,6 @@
 package com.grantech.gabaynijuan.data.model
 
-data class Position (
+data class PositionEntity (
      val id: String,
      val position_name: String,
      val enabled: Boolean,

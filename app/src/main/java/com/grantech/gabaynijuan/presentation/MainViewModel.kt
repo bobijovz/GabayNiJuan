@@ -23,7 +23,7 @@ class MainViewModel @Inject constructor(private val getCandidatesUseCase: GetCan
         viewModelScope.launch {
             mainViewMutableState.emit(mainViewMutableState.value.copy(isLoading = true))
             getCandidatesUseCase.execute()
-            delay(100)
+
             mainViewMutableState.emit(MainViewState(isLoading = false))
 
         }

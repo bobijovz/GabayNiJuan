@@ -1,6 +1,6 @@
 package com.grantech.gabaynijuan.data.model
 
-data class PartyList(
+data class PartyListEntity(
         val id: String,
         val party_name: String,
         val abbreviation: String,
